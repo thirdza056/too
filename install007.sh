@@ -1,7 +1,7 @@
 #!/bin/bash
 #Web Panel
 #<BODY text='ffffff'>
-# Mod by Pichet Buanuan
+# Mod by DKz
 # ==================================================
 rm -f install
 clear
@@ -318,8 +318,8 @@ cp /home/vps/public_html/VPN-Internet_TRUE.ovpn /home/vps/public_html/ConfigPane
 cp /home/vps/public_html/VPN-Internet_TRUE.ovpn /home/vps/public_html/ConfigPanel/SpeedVPN.ovpn
 
 #wget -O aa "https://tv-#netvpn.000webhostapp.com/G/conf/squid.txt"
-bash aa
-rm aa
+#bash aa
+#rm aa
 
 clear
 echo ""
