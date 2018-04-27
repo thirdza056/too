@@ -282,18 +282,6 @@ echo " Install... ( 90% )
 
 "
 
-
-# install webmin
-echo " install Webmin..."
-cd
-wget http://prdownloads.sourceforge.net/webadmin/webmin_1.680_all.deb
-dpkg -i --force-all webmin_1.680_all.deb;
-apt-get -y -f install;
-rm /root/webmin_1.680_all.deb
-service webmin restart
-
-
-
 clear
 echo ""
 echo -e "\033[1;35m"
@@ -302,7 +290,6 @@ echo -e "\033[1;35m"
 cd /usr/bin
 wget -q -O menu "https://raw.githubusercontent.com/dkdenza/DkDenza69/master/menu.sh"
 wget -q -O speedtest "https://raw.githubusercontent.com/dkdenza/DkDenza69/master/speedtest.py"
-
 echo "30 3 * * * root /sbin/reboot" > /etc/cron.d/reboot
 
 chmod +x speedtest
